@@ -1,0 +1,33 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: era
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    kubernetes.io/ingress.allow-http: "false"
+    nginx.ingress.kubernetes.io/proxy-body-size: 10m
+spec:
+  tls:
+  - hosts:
+    - hosts_name
+    secretName: secret-file_name
+  rules:
+  - host: hosts_name
+    http:
+      paths:
+      - backend:
+          serviceName: service_name
+          servicePort: port
+  - host: hosts_name
+    http:
+      paths:
+      - backend:
+          serviceName: backend_service
+          servicePort: port
+  - host: backend_service
+    http:
+      paths:
+      - backend:
+          serviceName: backend_service
+          servicePort: service port           
