@@ -1,5 +1,6 @@
 Infrastructure and Deployment details
 
+![](Infrastructure.png)
 
 Complete architecture definition
 
@@ -26,6 +27,7 @@ Incase of MongoDB we can create a stateful set with persistent volume or can use
 
 Working structure
 
+![](Deployment_Structure.png)
 
 How Deployment works
 
@@ -58,6 +60,8 @@ GCP provide fully manages API Gateway services. API Gateway enables you to provi
 
 3.OAuthorization Server
  
+ ![](OAuth.png)
+ 
 GCP uses OAuth 2.0. Working of OAuth
 
 4.Long Running Jobs
@@ -71,5 +75,7 @@ We can write a yaml file using kind job for cron or jobs. Attaching a sample job
 7.If we are coming to database I prefer to use MongoDB. For larger query and size Mongodb is much preferred.  For easy management we can MongoDB Atlas as it is fully managed service.
 
 Horizontal Pod Autoscaler
+
+![](Autoscaler.png)
 
   We can do autoscaling based on resource’s utilization as percentage by specifying value for CPU requests.  If we do not specify requests, you can autoscale based only on the absolute value of the resource's utilization, such as milliCPUs.  
