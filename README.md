@@ -1,5 +1,6 @@
 Basic Architecture
 
+![](Backend_Architecture.png)
 
 Backened Architecture
 
