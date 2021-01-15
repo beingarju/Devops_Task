@@ -1,6 +1,6 @@
 Infrastructure and Deployment details
 
-![](Backend_Architecture.png)
+![](Infrastructure.png)
 Complete architecture definition
 
 1.I will be using Google Cloud Platform as a cloud services.
